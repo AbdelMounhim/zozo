@@ -21,5 +21,12 @@ for (i=0; i<5; i++) {
 
 
 
+let i;
+for (i=0; i<5; i++) {
+    ( function (j) {
+            return setTimeout( function() { console.log("j=",j); }, j*1000 ) ;
+    } ) (i)
+ }
+
 
 
